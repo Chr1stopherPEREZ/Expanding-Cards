@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* ************* */
+/* STYLE GLOBALE */
+/* ************* */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  overflow-x: hidden;
+}
+
+body a {
+  color: rgb(63, 63, 104);
+  text-decoration: none;
+}
+
+body a:hover {
+  opacity: 0.5;
+}
+
+/* *************** */
+/* NAVBAR & FOOTER */
+/* *************** */
+
+body .header {
+  display: flex;
+  flex-direction: column;
+}
+
+body .header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .header .container .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+body .header .container .navbar .navbar-link {
+  padding: 15px;
+}
+
+body .header .container .lien-icone {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+
+body .footer .container .final-line {
+  margin: 50px 0px 0px 0px;
+}
+
+/* ***** */
+/* CARDS */
+/* ***** */
+
+body section {
+  margin: 5em 0 5em 0;
+}
+
+body .section-cards {
+  display: flex;
+}
+
+body .panel {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  border-radius: 50px;
+  border: solid 2px;
+  border-color: rgb(63, 63, 104);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  flex: 1;
+  margin: 10px;
+  transition: all 700ms ease-in;
+  filter: grayscale(100%);
+}
+
+body .panel .subtitle {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+}
+
+body .panel.active {
+  flex: 5;
+  filter: grayscale(0%);
+}
+
+body .panel.active .subtitle {
+  opacity: 1;
+  transition: opacity 0.5s ease-in 0.5s;
+}
+
+/* **** */
+/* FORM */
+/* **** */
+
+body .section-contact .subtitle {
+  color: rgb(63, 63, 104);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body .section-contact .form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  color: rgb(63, 63, 104);
+}
+
+body .section-contact .form-item {
+  display: flex;
+  gap: 20px;
+}
+
+body .section-contact .form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+body .section-contact input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: 2px solid rgb(63, 63, 104);
+}
+
+body .section-contact label {
+  margin-bottom: 10px;
+}
+
+body .section-contact input[type="submit"] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+body .section-contact .btn {
+  background-color: rgb(63, 63, 104);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body .section-contact .btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+/* Style.css */
